@@ -382,11 +382,11 @@ const quizData = [
   },
   {
     q: 'What do Jerald and Princess call each other?',
-    opts: ["Honey", "Love", "Ma'am/Sir", "Bestie"],
+    opts: ["Honey", "Love", "Ma'am/Sir", "Mhie & Dhie"],
     correct: 1
   },
   {
-    q: "What's basically their main love language?",
+    q: "What's basically our main love language?",
     opts: ["Sending meme & sweet reels all day", "Formal emails", "Morse code", "Silence"],
     correct: 0
   },
