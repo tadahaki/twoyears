@@ -360,7 +360,7 @@ const startDateInput = document.getElementById('startDate');
 const counterResults = document.getElementById('counterResults');
 const statDays = document.getElementById('statDays');
 const statMemes = document.getElementById('statMemes');
-const statAnime = document.getElementById('statAnime');
+const statMonths = document.getElementById('statMonths');
 startDateInput.addEventListener('change', ()=>{
   const val = startDateInput.value;
   if(!val) return;
@@ -369,7 +369,12 @@ startDateInput.addEventListener('change', ()=>{
   const diffDays = Math.max(0, Math.floor((now - start) / (1000*60*60*24)));
   statDays.textContent = diffDays.toLocaleString();
   statMemes.textContent = (diffDays * 3).toLocaleString();
-  statAnime.textContent = Math.max(1, Math.floor(diffDays/5)).toLocaleString();
+
+  let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  if (now.getDate() < start.getDate()) months--;
+  months = Math.max(0, months);
+  statMonths.textContent = months.toLocaleString();
+
   counterResults.style.display = 'grid';
 });
 
