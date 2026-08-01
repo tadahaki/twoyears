@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jerald &amp; Princess — Two Years of Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- INTRO: bud -> huge blooming flower -> wrapped bouquet -->
+<div id="introOverlay">
+
+  <div class="intro-phase active" id="phaseBud">
+    <span class="intro-eyebrow">a little something first</span>
+    <h2 class="intro-title">Open Your Gift, Love</h2>
+    <svg id="budSvg" class="bud-svg" viewBox="0 0 120 120" width="110" height="110"></svg>
+    <button class="open-btn" id="openBtn">Open It, Love 💜</button>
+  </div>
+
+  <div class="intro-phase" id="phaseBloom">
+    <div class="glow-pulse"></div>
+    <svg id="bigFlowerSvg" class="big-flower" viewBox="0 0 400 400"></svg>
+    <p class="intro-hint">blooming just for you, Love...</p>
+  </div>
+
+  <div class="intro-phase" id="phaseBouquet">
+    <span class="intro-eyebrow">for you, Princess</span>
+    <h2 class="intro-title">Happy Anniversary, Love</h2>
+    <svg id="bouquetSvg" class="bouquet-svg" viewBox="0 0 320 420"></svg>
+    <button class="open-btn" id="continueBtn">Continue To Us 💜</button>
+  </div>
+
+</div>
+
+<div class="petal-field" id="petalField"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="eyebrow">Two Years Of Us</span>
+  <h1>Jerald<span class="amp">&amp;</span>Princess</h1>
+  <p class="sub">A little silly, a lot sweet, and completely, ridiculously in love.<br>Happy 2nd Anniversary, Love. 💜</p>
+  <div class="callsign-badge"><span class="dot"></span> currently texting each other "Love"</div>
+  <div class="scroll-cue">keep scrolling<span class="arrow"></span></div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-wrap">
+  <span class="eyebrow">Exhibit A</span>
+  <h2>Our Silly, Sweet Evidence</h2>
+  <p class="lead">Two years of duck faces, heart hands, and photos neither of us were ready for.</p>
+  <div class="filmstrip" id="filmstrip">
+    <!--PHOTOS INSERTED BY script.js-->
+  </div>
+</section>
+
+<!-- CHAT / LOVE NOTES -->
+<section class="chat-section">
+  <div style="text-align:center;">
+    <span class="eyebrow">Exhibit B</span>
+    <h2>Open When You Miss Me</h2>
+  </div>
+  <div class="phone">
+    <div class="phone-head">
+      <div class="avatar">💜</div>
+      <div>
+        <div class="who">Love</div>
+        <div class="status">tap a message to open it</div>
+      </div>
+    </div>
+    <div class="thread" id="thread"><!--BUBBLES INSERTED BY script.js--></div>
+    <div class="thread-progress" id="threadProgress">0 / 8 opened</div>
+  </div>
+</section>
+
+<!-- COUNTER -->
+<section class="counter-section">
+  <span class="eyebrow">Exhibit C</span>
+  <h2>How Long Have We Been This Cute?</h2>
+  <div class="counter-card">
+    <label for="startDate">Okay, Love, remind me — when did we start?</label>
+    <input type="date" id="startDate">
+    <div class="counter-results" id="counterResults" style="display:none;">
+      <div class="stat"><span class="num" id="statDays">0</span><span class="label">Days Together</span></div>
+      <div class="stat"><span class="num" id="statMemes">0</span><span class="label">Memes Sent*</span></div>
+      <div class="stat"><span class="num" id="statAnime">0</span><span class="label">Anime Nights*</span></div>
+    </div>
+    <p class="counter-hint">*rough, extremely scientific estimates</p>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz-section">
+  <span class="eyebrow">Exhibit D</span>
+  <h2>How Well Do You Know Us?</h2>
+  <div class="quiz-card">
+    <div class="quiz-progress" id="quizProgress">Question 1 of 5</div>
+    <div id="quizBody"><!--QUIZ INSERTED BY script.js--></div>
+    <div class="quiz-result" id="quizResult">
+      <div class="big-emoji">💜</div>
+      <h3 id="quizResultTitle">You know us so well</h3>
+      <p id="quizResultText"></p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR FOREVER LIST -->
+<section class="dreams-section">
+  <span class="eyebrow">Exhibit E</span>
+  <h2>A Letter For Our Anniversary</h2>
+  <div class="dreams-letter">
+    <p>My Love,</p>
+    <p>
+      I think about our someday a lot — the version of us who made it, who's still
+      this silly and this soft with each other, just further down the road. I want us
+      to actually get there together, and I want to build a whole life out of it with you.
+    </p>
+    <p>
+      I want to take you to Japan and finally have real wagyu and a proper bowl of ramen
+      with you, no splitting, no sharing, both of us ordering too much. I want to wander
+      Europe with you and eat croissants that ruin every croissant after it, and sourdough
+      still warm from some tiny bakery neither of us can pronounce. I want us to build a
+      beautiful home of our own, and grow something real together — a farm, a business,
+      a life we're actually proud of.
+    </p>
+    <ul class="dreams-list">
+      <li> Wagyu &amp; ramen in Japan</li>
+      <li>🥐 Croissants &amp; sourdough in Europe</li>
+      <li>🏡 A beautiful home, built together</li>
+      <li>🌾 A successful farming business</li>
+    </ul>
+    <p>
+      None of it means much without you in it, so here's to working for it, saving for it,
+      and someday actually living it — with you, Love.
+    </p>
+    <div class="sign">— always yours, Jerald 💜</div>
+  </div>
+</section>
+
+<!-- FINALE -->
+<section class="finale">
+  <span class="eyebrow" style="color:var(--pink);">Last One, We Promise</span>
+  <h2>Happy 2nd Anniversary, My Love</h2>
+  <p>Thank you for two years of love, gentle mornings, for cooking,  and being the softest place I know. Here's to forever being silly together.</p>
+  <button class="surprise-btn" id="surpriseBtn">Tap For Your Surprise, Love</button>
+  <div class="letter" id="letter">
+    Princess,<br><br>
+    two years and you still make ordinary days feel like the best episode of the season.
+    Thank you for your gentle heart, your terrible-on-purpose memes, and for loving me
+    loudly and softly at the same time. Here's to every rerun of us, forever.<br><br>
+    <span class="signature">— always yours, Jerald 💜</span>
+  </div>
+</section>
+
+<footer>made with a stubborn amount of love, for Princess — by Jerald</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
