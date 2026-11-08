@@ -330,7 +330,7 @@ photos.forEach((p,i)=>{
 const notes = [
   "you get so gentle and soft with me, even when I'm being extra ",
   "you've turned dumb memes into our entire love language",
-  "you make me hard when I smell your scent",
+
   "you're the most caring, sweetest person I've ever met",
   "you make me feel like the most special person in the world, every single day",
   "I love how you always make me love, even when I'm sad or stressed",
@@ -395,15 +395,15 @@ const quizData = [
     correct: 0
   },
    {
-    q: "Esmeringhoy or Sikwate",
-    opts: ["Esmeringhoy",  "Sikwate"],
+    q: "IG or facebook memes",
+    opts: ["IG",  "facebook memes"],
     correct: 0
   }
   ,
   {
     q: "What emoji best represents the relationship?",
-    opts: ["❤️", "😂", "🍆💦🍑", "✨"],
-    correct: 2
+    opts: ["❤️", "😂", "✨"],
+    correct: 0
   },
  
 ];
