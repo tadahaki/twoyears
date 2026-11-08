@@ -349,7 +349,7 @@ notes.forEach((note,i)=>{
     btn.classList.add('opened');
     btn.innerHTML = note;
     opened++;
-    progressEl.textContent = opened + ' / 8 opened';
+    progressEl.textContent = opened + ' / 7 opened';
   });
   thread.appendChild(btn);
 });
